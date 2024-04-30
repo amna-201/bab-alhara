@@ -1,13 +1,4 @@
-var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 2000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("container-global").style.display = "block";
-}
 const form = document.querySelector('.form-quizz');
 let tableauResultats = [];
 const reponses = ['c', 'b', 'b', 'a', 'b', 'b', 'c', 'b', 'c', 'a'];
