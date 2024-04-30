@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Page</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(واجهه.jpg); 
+  background-size:contain;
+background-color:#686870b0 ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loader {
+  border: 16px solid #e9e5c0; 
+  border-top: 16px solid #493906; 
+  border-radius: 50%;
+  width: 80px; 
+  height: 80px; 
+  animation: spin 2s linear infinite;
+  position: absolute;
+  bottom: 20px; 
+  left: calc(50% - 40px); 
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+    
+    <audio id="loadingSound"  autoplay  loop src="first.mp3">
+
+</audio>
+
+<div class="loader"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    window.location.href = "index.html";
+  }, 8000); // تغيير الرقم إلى الفترة الزمنية المطلوبة بالمللي ثانية (هنا 6 ثوانٍ)
+});
+</script>
+
+</body>
+</html>

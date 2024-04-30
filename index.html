@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار عن مسلسل "باب الحارة"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        *, ::before, ::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+       background-image: url(babalhara.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+        }
+
+        h1 {
+            font-weight: lighter;
+            letter-spacing: 2px;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 40px;
+            color: rgb(250, 250, 250);
+font-style: italic;
+        }
+
+        .container-global {
+            width: 70%;
+            max-width: 800px;
+            margin: 0 auto;
+            height: auto;
+        }
+
+        .question-block {
+            padding: 15px 25px 25px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            background-color: rgba(43, 31, 2, 0.781);
+            color: aliceblue;
+        }
+
+        .question-block label {
+            font-size: 20px;
+        }
+
+        .question-block input[type='radio'] {
+            transform: scale(1.8);
+            margin: 10px;
+        }
+
+        .resultats {
+            padding: 25px;
+            margin: 10px 0 70px;
+            border-radius: 7px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+border: 3px rgb(56, 37, 2) dotted;
+        }
+
+        .resultats h2 {
+            text-align: center;
+        }
+
+        .aide {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .note {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        form button {
+            border: none;
+            outline: none;
+            border: 4px solid #291a02;
+            background-color: #352301;
+            color: aliceblue;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto;
+            padding: 20px 30px;
+            cursor: pointer;
+            font-size: 25px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        form button:hover {
+            background-color: #483106da;
+        }
+
+        .echec {
+            animation: echec 0.3s ease-in-out;
+        }
+
+        @keyframes echec {
+            0% {
+                transform: translateX(0px);
+            }
+            33% {
+                transform: translateX(5px);
+            }
+            66% {
+                transform: translateX(-5px);
+            }
+            100% {
+                transform: translateX(0px);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <h1> "باب الحارة"</h1>
+
+    <div class="container-global">
+        <form class="form-quizz">
+            <div class="question-block">
+                <h4> ماهو اسم ابن ابو النار؟</h4>
+                <div>
+                    <input type="radio" id="AbuShahab" name="q1" value="a" class="rd">
+                    <label for="AbuShahab"> زكريا </label>
+                </div>
+                <div>
+                    <input type="radio" id="AbuIssam" name="q1" value="b" class="rd">
+                    <label for="AbuIssam"> نار</label>
+                </div>
+                <div>
+                    <input type="radio" id="AbuIyad" name="q1" value="c" class="rd">
+                    <label for="AbuIyad"> يحيى</label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4>  من  اوصل مسدس العريف نوري  الى ابو شهاب؟</h4>
+                <div>
+                    <input type="radio" id="SyrianArmy" name="q2" value="a" class="rd">
+                    <label for="SyrianArmy"> ابو  ساطور</label>
+                </div>
+                <div>
+                    <input type="radio" id="FreeSyrianArmy" name="q2" value="b" class="rd">
+                    <label for="FreeSyrianArmy"> ابو طاحون  </label>
+                </div>
+                <div>
+                    <input type="radio" id="Hezbollah" name="q2" value="c" class="rd">
+                    <label for="Hezbollah"> أبو شاكوش</label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4>  من خبأ أبو يوسف عندما كان الدرك يفتش الحارة ؟</h4>
+                <div>
+                    <input type="radio" id="WaelSharaf" name="q3" value="a" class="rd">
+                    <label for="WaelSharaf">ام خاطر</label>
+                </div>
+                <div>
+                    <input type="radio" id="SamerIsmael" name="q3" value="b" class="rd">
+                    <label for="SamerIsmael">ام عصام   </label>
+                </div>
+                <div>
+                    <input type="radio" id="MohamadHindi" name="q3" value="c" class="rd">
+                    <label for="MohamadHindi"> ام حاتم </label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4>سكنت ام جوزيف  عندما كانت مصابه في بيت ؟</h4>
+                <div>
+                    <input type="radio" id="SulafFawakherji" name="q4" value="a" class="rd">
+                    <label for="SulafFawakherji">ابو بشير</label>
+                </div>
+                <div>
+                    <input type="radio" id="AbeerSabry" name="q4" value="b" class="rd">
+                    <label for="AbeerSabry"> ابو حاتم</label>
+                </div>
+                <div>
+                    <input type="radio" id="RashaShurbaji" name="q4" value="c" class="rd">
+                    <label for="RashaShurbaji">ابو بدر </label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4>ماهو اسم زوجة ابو شهاب الاولى ؟</h4>
+                <div>
+                    <input type="radio" id="KhaledAlkeesh" name="q5" value="a" class="rd">
+                    <label for="KhaledAlkeesh">شريفة </label>
+                </div>
+                <div>
+                    <input type="radio" id="ZiadRahbani" name="q5" value="b" class="rd">
+                    <label for="ZiadRahbani"> زهرية</label>
+                </div>
+                <div>
+                    <input type="radio" id="SamerAlmasri" name="q5" value="c" class="rd">
+                    <label for="SamerAlmasri">فهمية </label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4> من تسبب ب فضيحه ام عصام ؟</h4>
+                <div>
+                    <input type="radio" id="SabbahFakhri" name="q6" value="a" class="rd">
+                    <label for="SabbahFakhri">ابو غالب </label>
+                </div>
+                <div>
+                    <input type="radio" id="TaimHasan" name="q6" value="b" class="rd">
+                    <label for="TaimHasan">فريال خانوم </label>
+                </div>
+                <div>
+                    <input type="radio" id="AbbasAlNouri" name="q6" value="c" class="rd">
+                    <label for="AbbasAlNouri">ابو  وام بدر  </label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4>ماهو اسم اخو فوزية الذي ضربه معتز؟ </h4>
+                <div>
+                    <input type="radio" id="GhamgeenHanna" name="q7" value="a" class="rd">
+                    <label for="GhamgeenHanna"> فوزي</label>
+                </div>
+                <div>
+                    <input type="radio" id="WaelSharaf" name="q7" value="b" class="rd">
+                    <label for="WaelSharaf"> فريز</label>
+                </div>
+                <div>
+                    <input type="radio" id="SamerIsmael" name="q7" value="c" class="rd">
+                    <label for="SamerIsmael"> فايز</label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4> من اول من كشف مأمون بيك انه عميل؟ </h4>
+                <div>
+                    <input type="radio" id="SamerAlmasri" name="q8" value="a" class="rd">
+                    <label for="SamerAlmasri">ابو قاعود </label>
+                </div>
+                <div>
+                    <input type="radio" id="AbbasAlNouri" name="q8" value="b" class="rd">
+                    <label for="AbbasAlNouri">ابو محمود </label>
+                </div>
+                <div>
+                    <input type="radio" id="TaimHasan" name="q8" value="c" class="rd">
+                    <label for="TaimHasan">ابو غالب </label>
+                </div>
+            </div>
+          
+            <div class="question-block">
+                <h4>ما اسم سجن الذي كان معتقل به ابو عصام؟</h4>
+                <div>
+                    <input type="radio" id="KindaAlloush" name="q9" value="a" class="rd">
+                    <label for="KindaAlloush">عدرا</label>
+                </div>
+                <div>
+                    <input type="radio" id="SulafFawakherji" name="q9" value="b" class="rd">
+                    <label for="SulafFawakherji"> ابو غريب</label>
+                </div>
+                <div>
+                    <input type="radio" id="GhadaAbdelRazek" name="q9" value="c"class="rd">
+                    <label for="GhadaAbdelRazek">ارواد</label>
+                </div>
+            </div>
+            <div class="question-block">
+                <h4> كم عدد ذهبات ابو ابراهيم التي سرقها الادعشري؟</h4>
+                <div>
+                    <input type="radio" id="QusaiKhouli" name="q10" value="a" class="rd">
+                    <label for="QusaiKhouli">50 ذهبه </label>
+                </div>
+                <div>
+                    <input type="radio" id="AbbasAlNouri" name="q10" value="b" class="rd">
+                    <label for="AbbasAlNouri"> 25 ذهبه </label>
+                </div>
+                <div>
+                    <input type="radio" id="SamerIsmael" name="q10" value="c" class="rd">
+                    <label for="SamerIsmael"> 40 ذهبه </label>
+                </div>
+            </div>
+
+            <button type="submit">   بدك تتحدى؟ </button>
+        </form>
+
+        <div class="resultats" style="display: flex; flex-direction: column;  justify-content: center; align-self: center;">
+            <h2>  ورجينااا</h2>
+            <p class="aide"></p>
+            <p class="note"></p>
+            <img src="zaki.jpg" alt="نتيجة الاختبار" class="result-image" width="100%" height="80%">
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
