@@ -130,7 +130,7 @@ function afficherResultats(tabCheck) {
             sounds[10].play(); 
             break;
         default:
-            'حدث خطأ غير متوقع.';
+            'سوري  انتظر';
     }
 }
 
